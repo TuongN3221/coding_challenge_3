@@ -23,3 +23,31 @@ employee.performanceScore = 99;// Updates performanceScore property to a new sco
 employee.promotionEligible = true;// Adds boolean for promotion
 
 console.log(employee);
+
+// Task 4 - Customer Feedback Records
+let feedback = [
+    {
+        customerName: "Stinky Fish",
+        feedbackText: "I stink.",
+        rating: 19,
+    },
+    {
+        customerName: "Thalassophobic Fish", // Thalassophobia is the fear of the deep water or the ocean
+        feedbackText: "AAAAAAAAAAA",
+        rating: 0
+    },
+    {
+        customerName: "Idiot Fish",
+        feedbackText: "What?",
+        rating: 2
+    }
+];// decalres array of three objects
+
+feedback.push(
+    {
+        customerName: "Old Fish",
+        feedbackText: "Im old.",
+        rating: 1
+    }
+);// Adds a new feeback object to the array
+console.log(feedback);
