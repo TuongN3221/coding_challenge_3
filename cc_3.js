@@ -10,3 +10,16 @@ console.log(prices);
 let quantity = [15, 23, 54, 84, 68, 33];// Declares array of numerical quantities
 quantity[2] += 5;// Adds 5 to the third number in the array
 console.log(quantity);
+
+// Task 3 - Employee Performance Tracking
+let employee = {
+    name: "Big Fish", 
+    role: "Small Fish Advisor",
+    performanceScore: 23,
+    isActive: true
+}; // Declares object for employee
+
+employee.performanceScore = 99;// Updates performanceScore property to a new score
+employee.promotionEligible = true;// Adds boolean for promotion
+
+console.log(employee);
