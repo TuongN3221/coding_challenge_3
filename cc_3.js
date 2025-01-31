@@ -3,7 +3,7 @@
 let prices = [50.99, 23.99, 34.99, 64.99, 85.99, 100.99];// Declares array of intial prices
 prices.push(69.98);// Adds new price to array
 
-prices.shift();// removes the first price from array (50.99)
+prices.shift(50.99);// removes the first price from array (50.99)
 console.log(prices);
 
 // Task 2 - Modifying Customer Orders
@@ -22,7 +22,7 @@ let employee = {
 employee.performanceScore = 99;// Updates performanceScore property to a new score
 employee.promotionEligible = true;// Adds boolean for promotion
 
-console.log(employee);
+console.log(employee);// returns the new array of prices
 
 // Task 4 - Customer Feedback Records
 let feedback = [
@@ -51,3 +51,21 @@ feedback.push(
     }
 );// Adds a new feeback object to the array
 console.log(feedback);
+
+// Task 5 - Inventory Management System
+let inventory = {
+        itemName: "Thalassophobic Fish", 
+        stockCount: 23,
+        price: 94.89,
+
+        //Calculates the total value of inventory
+        calculateTotalValue: function() {
+            return this.stockCount * this.price;
+        }
+};// decalres object inventory
+
+//Returns the inventory and total inventory value
+console.log("Inventory Detail:", inventory)
+console.log("Total Inventory Value: $", + inventory.calculateTotalValue().toFixed(2));
+
+
